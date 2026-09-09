@@ -108,12 +108,21 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
               WhatsApp Us (+91 95612 88530)
             </a>
 
-            <div className="flex items-center justify-center text-xs text-slate-400 pt-2 text-center">
+            <div className="flex items-center justify-center gap-4 text-xs text-slate-400 pt-2 text-center flex-wrap">
+              <a
+                href={socialData.facebook.profileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-dentology-gold transition-colors font-medium"
+              >
+                Facebook Profile
+              </a>
+              <span>•</span>
               <a
                 href={socialData.instagram.profileUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-dentology-teal transition-colors"
+                className="hover:text-dentology-gold transition-colors font-medium"
               >
                 Instagram: {socialData.instagram.handle}
               </a>

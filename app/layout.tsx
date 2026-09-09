@@ -86,7 +86,7 @@ export default function RootLayout({
     url: "https://dentology.in",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1st Floor, H.No 130, Pandav Enclave, Opposite Kewalramani Hospital, Kamal Phool Chowk",
+      streetAddress: "1st Floor, Pandav Enclave, Opposite Kewalramani Hospital, Kamal Phool Chowk",
       addressLocality: "Jaripatka, Nagpur",
       addressRegion: "Maharashtra",
       postalCode: "440014",
@@ -102,19 +102,22 @@ export default function RootLayout({
       name: "Dr. Sanika Sharma",
       jobTitle: "Lead Dentist & Founder",
     },
-    sameAs: ["https://www.instagram.com/dentology_og1"],
+    sameAs: [
+      "https://www.instagram.com/dentology_og1",
+      "https://www.facebook.com/profile.php?id=61581589685851",
+    ],
     priceRange: "$$",
   };
 
   return (
-    <html lang="en" className={`${dmSerif.variable} ${plusJakarta.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${dmSerif.variable} ${plusJakarta.variable}`}>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col relative bg-slate-50 text-dentology-navy font-sans antialiased">
+      <body suppressHydrationWarning className="min-h-screen flex flex-col relative bg-slate-50 text-dentology-navy font-sans antialiased">
         <NavigationProvider>
           <AppointmentProvider>
             <CustomCursor />

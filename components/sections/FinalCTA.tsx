@@ -11,13 +11,13 @@ export default function FinalCTA() {
   const { openAppointmentModal } = useAppointment();
 
   return (
-    <section className="relative py-14 sm:py-28 lg:py-36 bg-dentology-navy text-white overflow-hidden select-none">
+    <section className="relative py-14 sm:py-28 lg:py-36 bg-[#072B1C] text-white overflow-hidden select-none">
       {/* Dynamic ambient background glows */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-dentology-blue/25 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-dentology-teal/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-dentology-gold/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/10 text-dentology-teal border border-white/20 text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-4 sm:mb-6">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/10 text-dentology-gold border border-dentology-gold/30 text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-4 sm:mb-6">
           <Sparkles className="w-3.5 h-3.5" />
           <span>Dentology • Jaripatka, Nagpur</span>
         </div>
@@ -25,7 +25,7 @@ export default function FinalCTA() {
         <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] mb-4 sm:mb-6">
           Your smile story
           <br />
-          <span className="italic text-dentology-teal font-light">starts here.</span>
+          <span className="italic text-dentology-gold-light font-light">starts here.</span>
         </h2>
 
         {/* Self-drawing curved smile line SVG */}
@@ -38,7 +38,7 @@ export default function FinalCTA() {
           >
             <motion.path
               d="M 20 20 Q 200 65 380 20"
-              stroke="#6AB2A9"
+              stroke="#D4AF37"
               strokeWidth="4"
               strokeLinecap="round"
               initial={{ pathLength: 0, opacity: 0 }}

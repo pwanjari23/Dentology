@@ -1,8 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import MobileMenu from "./MobileMenu";
 import { clinicData } from "@/data/clinicData";
 import { useAppointment } from "@/context/AppointmentContext";
@@ -39,25 +40,35 @@ export default function Navbar() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className={`max-w-7xl mx-auto flex items-center justify-between pointer-events-auto rounded-full transition-all duration-500 ${isScrolled
-              ? "bg-white/95 backdrop-blur-md shadow-glass border border-slate-200/80 py-2.5 px-5 sm:px-6"
-              : "bg-white/80 backdrop-blur-sm shadow-sm border border-slate-200/60 py-3 px-3 sm:px-5"
+              ? "bg-white/95 backdrop-blur-md shadow-glass border border-dentology-gold/20 py-2 px-5 sm:px-6"
+              : "bg-white/85 backdrop-blur-sm shadow-sm border border-emerald-900/10 py-2.5 px-3 sm:px-5"
             }`}
         >
           {/* Logo / Clinic Brand */}
           <button
             onClick={() => setActiveTab("home")}
-            className="flex items-center gap-2.5 group focus:outline-none rounded-full px-2 py-1 text-left"
+            className="flex items-center gap-3 group focus:outline-none rounded-full px-1.5 py-1 text-left"
           >
-            <div className="w-8 h-8 rounded-full bg-dentology-blue flex items-center justify-center text-white shadow-sm group-hover:scale-105 transition-transform">
-              <Sparkles className="w-4 h-4 text-white" />
+            <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden border border-dentology-gold/40 shadow-md group-hover:scale-105 transition-transform shrink-0">
+              <Image
+                src="/images/logo/dentology-logo.png"
+                alt="Dentology Logo"
+                fill
+                className="object-cover"
+              />
             </div>
-            <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-dentology-navy leading-none">
-              {clinicData.name}
-            </span>
+            <div className="flex flex-col">
+              <span className="font-serif text-lg sm:text-xl font-bold tracking-tight text-dentology-emerald leading-none">
+                {clinicData.name}
+              </span>
+              <span className="text-[9px] font-sans font-bold tracking-widest text-dentology-gold uppercase mt-0.5">
+                Dentistry & Aesthetics
+              </span>
+            </div>
           </button>
 
-          {/* Desktop Nav Tabs (Stories, Instagram, Location removed as requested) */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-100/80 p-1.5 rounded-full border border-slate-200/60">
+          {/* Desktop Nav Tabs */}
+          <nav className="hidden md:flex items-center gap-1 bg-emerald-950/5 p-1.5 rounded-full border border-emerald-900/10">
             {navItems.map((item) => {
               const isActive = activeTab === item.tab;
               return (
@@ -65,14 +76,14 @@ export default function Navbar() {
                   key={item.tab}
                   onClick={() => setActiveTab(item.tab)}
                   className={`relative px-4 py-1.5 rounded-full text-xs font-bold tracking-wide transition-all ${isActive
-                      ? "text-dentology-blue"
-                      : "text-slate-600 hover:text-dentology-navy"
+                      ? "text-dentology-emerald"
+                      : "text-slate-600 hover:text-dentology-emerald"
                     }`}
                 >
                   {isActive && (
                     <motion.div
                       layoutId="activeTabBadge"
-                      className="absolute inset-0 bg-white shadow-sm rounded-full -z-10"
+                      className="absolute inset-0 bg-white shadow-sm rounded-full -z-10 border border-dentology-gold/30"
                       transition={{ type: "spring", stiffness: 400, damping: 30 }}
                     />
                   )}
@@ -86,9 +97,9 @@ export default function Navbar() {
           <div className="hidden sm:flex items-center gap-3">
             <button
               onClick={() => openAppointmentModal("Navbar CTA")}
-              className="px-5 py-2.5 rounded-full bg-dentology-blue text-white text-xs font-bold tracking-wider uppercase hover:bg-blue-600 hover:shadow-glow transition-all active:scale-95"
+              className="px-5 py-2.5 rounded-full bg-dentology-emerald text-white text-xs font-bold tracking-wider uppercase hover:bg-dentology-emerald-dark hover:shadow-lg border border-dentology-gold/30 transition-all active:scale-95 flex items-center gap-2"
             >
-              Book Appointment
+              <span>Book Appointment</span>
             </button>
           </div>
 
@@ -96,7 +107,7 @@ export default function Navbar() {
           <div className="flex md:hidden items-center gap-2">
             <button
               onClick={() => openAppointmentModal("Mobile Top Bar CTA")}
-              className="px-3.5 py-1.5 rounded-full bg-dentology-blue text-white text-xs font-semibold hover:bg-blue-600 shadow-sm"
+              className="px-3.5 py-1.5 rounded-full bg-dentology-emerald text-white text-xs font-semibold hover:bg-dentology-emerald-dark shadow-sm border border-dentology-gold/30"
             >
               Book
             </button>

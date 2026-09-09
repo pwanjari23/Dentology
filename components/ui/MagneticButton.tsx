@@ -54,13 +54,13 @@ export default function MagneticButton({
 
   const variants = {
     primary:
-      "bg-dentology-blue text-white shadow-md hover:shadow-glow hover:bg-blue-600 px-6 py-3.5 text-sm md:text-base",
+      "bg-dentology-emerald text-white shadow-md hover:shadow-lg hover:bg-dentology-emerald-dark border border-dentology-gold/30 px-6 py-3.5 text-sm md:text-base",
     secondary:
-      "bg-dentology-navy text-white hover:bg-slate-800 px-6 py-3.5 text-sm md:text-base shadow-md",
+      "bg-dentology-emerald-dark text-white hover:bg-emerald-950 border border-dentology-gold/20 px-6 py-3.5 text-sm md:text-base shadow-md",
     outline:
-      "border-2 border-dentology-blue text-dentology-blue hover:bg-dentology-blue hover:text-white px-6 py-3.5 text-sm md:text-base",
+      "border-2 border-dentology-emerald text-dentology-emerald hover:bg-dentology-emerald hover:text-white px-6 py-3.5 text-sm md:text-base font-bold",
     white:
-      "bg-white text-dentology-navy hover:bg-slate-100 px-6 py-3.5 text-sm md:text-base shadow-md",
+      "bg-white text-dentology-emerald hover:bg-emerald-50 px-6 py-3.5 text-sm md:text-base shadow-md border border-dentology-gold/30 font-bold",
     whatsapp:
       "bg-[#25D366] text-white hover:bg-[#20ba59] shadow-md px-6 py-3.5 text-sm md:text-base",
   };

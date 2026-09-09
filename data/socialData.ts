@@ -11,6 +11,11 @@ export interface InstagramPost {
 }
 
 export const socialData = {
+  facebook: {
+    name: "Facebook",
+    profileUrl: "https://www.facebook.com/profile.php?id=61581589685851",
+    handle: "Dentology Facebook",
+  },
   instagram: {
     handle: "@dentology_og1",
     profileUrl: "https://www.instagram.com/dentology_og1",

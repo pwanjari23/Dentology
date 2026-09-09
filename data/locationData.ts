@@ -2,7 +2,7 @@ export const locationData = {
   clinicName: "DENTOLOGY (House of Dentistry and Aesthetics)",
   doctor: "Dr. Sanika Sharma",
   address: {
-    street: "1st Floor, H.No 130, Pandav Enclave",
+    street: "1st Floor, Pandav Enclave",
     opposite: "Opposite Kewalramani Hospital",
     intersection: "Kamal Phool Chowk",
     area: "Jaripatka",
@@ -11,7 +11,7 @@ export const locationData = {
     postalCode: "440014",
     country: "India",
   },
-  landmark: "Just a few turns straight from Hanuman Mandir to your right, opposite Kewalramani Hospital, Kamal Phool Chowk.",
+  landmark: "Opposite Kewalramani Hospital, Kamal Phool Chowk, Jaripatka, Nagpur.",
   phone: "+91 95612 88530",
   rawPhone: "+919561288530",
   whatsapp: "919561288530",

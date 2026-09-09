@@ -35,15 +35,15 @@ export const clinicData: ClinicInfo = {
   displayPhone: "+91 95612 88530",
   whatsappNumber: "919561288530",
   address: {
-    line1: "1st Floor, H.No 130, Pandav Enclave",
+    line1: "1st Floor, Pandav Enclave",
     line2: "Opposite Kewalramani Hospital, Kamal Phool Chowk",
     area: "Jaripatka",
     city: "Nagpur",
     state: "Maharashtra",
     pincode: "440014",
-    landmark: "Just off Hanuman Mandir, opposite Kewalramani Hospital, Kamal Phool Chowk",
+    landmark: "Opposite Kewalramani Hospital, Kamal Phool Chowk",
     fullAddress:
-      "1st Floor, H.No 130, Pandav Enclave, Opposite Kewalramani Hospital, Kamal Phool Chowk, Jaripatka, Nagpur, Maharashtra 440014",
+      "1st Floor, Pandav Enclave, opposite Kewalramani Hospital, Kamal Phool Chowk, Jaripatka, Nagpur, Maharashtra 440014, India",
   },
   googleMapsUrl:
     "https://www.google.com/maps/search/?api=1&query=Dentology+Jaripatka+Nagpur+Pandav+Enclave+Kamal+Phool+Chowk",

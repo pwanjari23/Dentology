@@ -12,26 +12,26 @@ export default function ScanningExperience() {
   const [interactiveMode, setInteractiveMode] = useState<"standard" | "mesh" | "crossSection">("mesh");
 
   return (
-    <section id="scanning" className="relative py-14 sm:py-24 lg:py-32 bg-dentology-blue text-white overflow-hidden">
+    <section id="scanning" className="relative py-14 sm:py-24 lg:py-32 bg-gradient-to-br from-[#0B462D] via-[#0E3B27] to-[#072B1C] text-white overflow-hidden">
       {/* Decorative ambient background rings */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-dentology-teal/20 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-dentology-navy/40 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-dentology-gold/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-emerald-400/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* Left Column: Clinical Rationale & Descriptors */}
           <div className="lg:col-span-6 flex flex-col items-start">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-4 sm:mb-6 text-dentology-green">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-dentology-gold/30 text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-4 sm:mb-6 text-dentology-gold-light">
               <Scan className="w-3.5 h-3.5" />
               Signature Digital Care
             </div>
 
             <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-normal leading-tight mb-4 sm:mb-6">
               See what the <br />
-              <span className="italic font-light text-dentology-teal">mirror can&apos;t.</span>
+              <span className="italic font-light text-dentology-gold-light">mirror can&apos;t.</span>
             </h2>
 
-            <p className="text-blue-100 font-sans text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
+            <p className="text-emerald-100/90 font-sans text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
               Our intraoral scans capture high-resolution, detailed views of your teeth and gums
               helping us detect problems early, plan treatments accurately, and explain your oral
               health clearly.

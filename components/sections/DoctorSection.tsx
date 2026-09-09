@@ -66,17 +66,17 @@ export default function DoctorSection() {
               whileInView={{ scaleX: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="w-24 h-1 bg-gradient-to-r from-dentology-blue to-dentology-teal rounded-full origin-left mb-6"
+              className="w-24 h-1 bg-gradient-to-r from-dentology-emerald via-dentology-gold to-dentology-gold-light rounded-full origin-left mb-6"
             />
 
-            <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-dentology-navy font-normal mb-6 leading-snug">
+            <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-dentology-emerald font-normal mb-6 leading-snug">
               &ldquo;Dentology was never just about opening a clinic. It was about bringing modern
               care back home.&rdquo;
             </h3>
 
             {/* Verified clinic story quote box */}
-            <div className="relative pl-6 border-l-2 border-dentology-green/60 mb-6 bg-slate-50/70 p-5 rounded-r-2xl">
-              <Quote className="w-6 h-6 text-dentology-teal/40 absolute -top-2 -left-3" />
+            <div className="relative pl-6 border-l-2 border-dentology-gold mb-6 bg-emerald-50/50 p-5 rounded-r-2xl border border-r-0 border-t-0 border-b-0">
+              <Quote className="w-6 h-6 text-dentology-gold/60 absolute -top-2 -left-3" />
               <p className="text-slate-700 font-sans text-sm sm:text-base leading-relaxed italic">
                 {doctorData.clinicStory}
               </p>

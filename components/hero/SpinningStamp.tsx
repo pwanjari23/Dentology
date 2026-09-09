@@ -22,7 +22,7 @@ export default function SpinningStamp({
       data-cursor="OPEN"
     >
       {/* Background glowing circle */}
-      <div className="absolute inset-0 rounded-full bg-[#E5F364] shadow-xl group-hover:scale-105 group-active:scale-95 transition-transform duration-300" />
+      <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-dentology-gold via-dentology-gold-light to-amber-200 shadow-xl border border-amber-100 group-hover:scale-105 group-active:scale-95 transition-transform duration-300" />
 
       {/* Rotating Circular Text SVG */}
       <motion.div
@@ -41,7 +41,7 @@ export default function SpinningStamp({
             fontSize="10"
             fontWeight="bold"
             letterSpacing="2.2"
-            fill="#273146"
+            fill="#072B1C"
             className="font-sans uppercase"
           >
             <textPath href="#stampPath" startOffset="0%">
@@ -53,8 +53,8 @@ export default function SpinningStamp({
 
       {/* Center Arrow Icon */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-dentology-navy text-white flex items-center justify-center group-hover:bg-dentology-blue group-hover:rotate-45 transition-all duration-300 shadow-md">
-          <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 text-[#E5F364] group-hover:text-white transition-colors" />
+        <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#072B1C] text-dentology-gold flex items-center justify-center group-hover:bg-dentology-emerald group-hover:rotate-45 transition-all duration-300 shadow-md">
+          <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6 text-dentology-gold group-hover:text-white transition-colors" />
         </div>
       </div>
     </div>

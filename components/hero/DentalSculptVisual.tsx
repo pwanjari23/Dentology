@@ -55,11 +55,11 @@ export default function DentalSculptVisual() {
           y: mousePos.y * -8,
         }}
         transition={{ type: "spring", damping: 30, stiffness: 200 }}
-        className="absolute inset-2 rounded-[36px] sm:rounded-[48px] bg-gradient-to-tr from-dentology-blue/20 via-sky-400/20 to-dentology-teal/20 blur-2xl sm:blur-3xl -z-10"
+        className="absolute inset-2 rounded-[36px] sm:rounded-[48px] bg-gradient-to-tr from-dentology-gold/25 via-emerald-500/20 to-dentology-emerald/30 blur-2xl sm:blur-3xl -z-10"
       />
 
       {/* Decorative dashed circular accent */}
-      <div className="absolute top-4 right-2 w-32 sm:w-48 h-32 sm:h-48 rounded-full border border-white/40 pointer-events-none animate-[spin_80s_linear_infinite]" />
+      <div className="absolute top-4 right-2 w-32 sm:w-48 h-32 sm:h-48 rounded-full border border-dentology-gold/30 pointer-events-none animate-[spin_80s_linear_infinite]" />
 
       {/* LAYER 2: Main 3D Tooth Sculpture with Miniature Dental Specialists */}
       <motion.div
@@ -131,13 +131,13 @@ export default function DentalSculptVisual() {
         }}
         className="absolute top-3 sm:top-8 -left-2 sm:-left-10 z-20"
       >
-        <div className="flex items-center gap-2 px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-md shadow-glass border border-slate-200/80 hover:scale-105 hover:shadow-glass-hover transition-all">
-          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-dentology-blue/10 text-dentology-blue flex items-center justify-center font-bold">
+        <div className="flex items-center gap-2 px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-md shadow-glass border border-dentology-gold/30 hover:scale-105 hover:shadow-glass-hover transition-all">
+          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-dentology-emerald/15 text-dentology-emerald flex items-center justify-center font-bold">
             <Scan className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </div>
           <div className="flex flex-col text-left">
             <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-wider text-slate-400">Digital</span>
-            <span className="text-[11px] sm:text-xs font-bold text-dentology-navy">3D Scanning</span>
+            <span className="text-[11px] sm:text-xs font-bold text-dentology-emerald">3D Scanning</span>
           </div>
         </div>
       </motion.div>
@@ -157,13 +157,13 @@ export default function DentalSculptVisual() {
         }}
         className="absolute bottom-16 sm:bottom-20 -right-2 sm:-right-8 z-20"
       >
-        <div className="flex items-center gap-2 px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-md shadow-glass border border-slate-200/80 hover:scale-105 hover:shadow-glass-hover transition-all">
-          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-dentology-green/20 text-dentology-navy flex items-center justify-center font-bold">
+        <div className="flex items-center gap-2 px-2.5 py-1.5 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl bg-white/95 backdrop-blur-md shadow-glass border border-dentology-gold/30 hover:scale-105 hover:shadow-glass-hover transition-all">
+          <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-dentology-gold/25 text-dentology-emerald flex items-center justify-center font-bold">
             <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </div>
           <div className="flex flex-col text-left">
             <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-wider text-slate-400">Philosophy</span>
-            <span className="text-[11px] sm:text-xs font-bold text-dentology-navy">Tooth Saving</span>
+            <span className="text-[11px] sm:text-xs font-bold text-dentology-emerald">Tooth Saving</span>
           </div>
         </div>
       </motion.div>

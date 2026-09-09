@@ -25,7 +25,7 @@ const intentOptions: IntentOption[] = [
     lead: "A confident smile starts with understanding your unique facial and dental harmony.",
     recommendation:
       "We recommend a personalized smile consultation with Dr. Sanika Sharma. We examine tooth alignment, contouring, and natural tooth aesthetics using non-invasive evaluation.",
-    color: "from-blue-500/10 to-teal-500/10 border-dentology-blue",
+    color: "from-amber-500/10 to-emerald-500/10 border-dentology-gold",
   },
   {
     id: "concern",
@@ -34,7 +34,7 @@ const intentOptions: IntentOption[] = [
     lead: "Delaying treatment turns small, reversible dental issues into complex infections.",
     recommendation:
       "Please don't wait for pain to worsen or rely on unverified advice. Dr. Sanika Sharma can examine the tooth clinically, identify the root cause, and formulate a conservative tooth-saving plan.",
-    color: "from-rose-500/10 to-amber-500/10 border-dentology-terracotta",
+    color: "from-rose-500/10 to-amber-500/10 border-dentology-gold",
   },
   {
     id: "preventive",
@@ -43,7 +43,7 @@ const intentOptions: IntentOption[] = [
     lead: "Gentle enamel maintenance and personalized oral hygiene education.",
     recommendation:
       "Our comprehensive check-up evaluates enamel thickness, gum health, and brushing mechanics to prevent sensitivity and decay before symptoms even begin.",
-    color: "from-emerald-500/10 to-teal-500/10 border-dentology-green",
+    color: "from-emerald-500/10 to-teal-500/10 border-dentology-emerald",
   },
   {
     id: "scanning",
@@ -52,7 +52,7 @@ const intentOptions: IntentOption[] = [
     lead: "Experience real-time high-definition digital visualization of your teeth and gums.",
     recommendation:
       "No gagging, no messy impression putty. In just a few minutes, we create a precision 3D digital model of your mouth that you can see and discuss together on screen.",
-    color: "from-cyan-500/10 to-blue-500/10 border-dentology-aqua",
+    color: "from-amber-500/10 to-emerald-500/10 border-dentology-gold",
   },
   {
     id: "unsure",
@@ -61,7 +61,7 @@ const intentOptions: IntentOption[] = [
     lead: "We welcome you to visit, meet Dr. Sanika Sharma, and take things at your own pace.",
     recommendation:
       "Dentology was built as a warm, welcoming neighborhood studio in Jaripatka. Feel free to message us on WhatsApp with any general questions before planning a visit.",
-    color: "from-slate-500/10 to-slate-400/10 border-slate-300",
+    color: "from-slate-500/10 to-emerald-500/10 border-emerald-300",
   },
 ];
 
@@ -72,13 +72,13 @@ export default function PatientIntent() {
   const activeOption = intentOptions.find((o) => o.id === selectedId) || intentOptions[0];
 
   return (
-    <section id="intent" className="relative py-14 sm:py-24 lg:py-32 bg-slate-50/70 overflow-hidden">
+    <section id="intent" className="relative py-16 sm:py-24 lg:py-28 bg-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Interactive Pathway"
           title="What brings you here today?"
-          subtitle="Select your current intention to see how we can best support your dental health. (Informational guide, not a medical diagnosis)."
-          badgeColor="green"
+          subtitle="Select your current intention to see how we can best support your dental health."
+          badgeColor="teal"
           centered
         />
 
@@ -93,17 +93,17 @@ export default function PatientIntent() {
                 <button
                   key={opt.id}
                   onClick={() => setSelectedId(opt.id)}
-                  className={`shrink-0 lg:shrink p-3 sm:p-4 rounded-xl sm:rounded-2xl text-left transition-all duration-300 flex items-center gap-2.5 sm:gap-4 border whitespace-nowrap lg:whitespace-normal ${
+                  className={`shrink-0 lg:shrink p-3.5 sm:p-4 rounded-xl sm:rounded-2xl text-left transition-all duration-300 flex items-center gap-2.5 sm:gap-4 border whitespace-nowrap lg:whitespace-normal ${
                     isSelected
-                      ? "bg-white shadow-card border-dentology-blue scale-[1.02] ring-2 ring-dentology-blue/20"
-                      : "bg-white/60 border-slate-200/80 hover:bg-white opacity-85 hover:opacity-100"
+                      ? "bg-white shadow-card border-dentology-emerald scale-[1.02] ring-2 ring-dentology-gold/30"
+                      : "bg-white/70 border-slate-200/80 hover:bg-white opacity-90 hover:opacity-100"
                   }`}
                 >
                   <div
                     className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl flex items-center justify-center shrink-0 transition-colors ${
                       isSelected
-                        ? "bg-dentology-blue text-white"
-                        : "bg-slate-100 text-slate-500"
+                        ? "bg-dentology-emerald text-dentology-gold"
+                        : "bg-emerald-50 text-emerald-800"
                     }`}
                   >
                     <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -111,7 +111,7 @@ export default function PatientIntent() {
                   <div className="flex flex-col">
                     <span
                       className={`text-xs sm:text-sm font-semibold font-sans transition-colors ${
-                        isSelected ? "text-dentology-navy font-bold" : "text-slate-700"
+                        isSelected ? "text-dentology-emerald font-bold" : "text-slate-700"
                       }`}
                     >
                       {opt.title}

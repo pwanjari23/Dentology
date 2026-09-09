@@ -6,12 +6,14 @@ import { useNavigation } from "@/context/NavigationContext";
 // Home Page Exclusive Sections (per user instruction)
 import Hero from "@/components/hero/Hero";
 import TrustRibbon from "@/components/sections/TrustRibbon";
+import DoctorShortSpotlight from "@/components/sections/DoctorShortSpotlight";
 import PatientIntent from "@/components/sections/PatientIntent";
 import SmileStories from "@/components/sections/SmileStories";
 import InstagramCarousel from "@/components/sections/InstagramCarousel";
 import VideoExperience from "@/components/sections/VideoExperience";
 import PatientJourney from "@/components/sections/PatientJourney";
 import VerifiedReviews from "@/components/sections/VerifiedReviews";
+import GoogleReviewsSection from "@/components/sections/GoogleReviewsSection";
 import GoogleMapsSection from "@/components/sections/GoogleMapsSection";
 import FAQAccordion from "@/components/sections/FAQAccordion";
 import FinalCTA from "@/components/sections/FinalCTA";
@@ -44,7 +46,10 @@ export default function HomePage() {
             {/* 02. Trust Ribbon */}
             <TrustRibbon />
 
-            {/* 03. Patient Intent Hub ("What brings you here today?") */}
+            {/* 03. Flagship Short Doctor Spotlight */}
+            <DoctorShortSpotlight />
+
+            {/* 04. Patient Intent Hub ("What brings you here today?") */}
             <PatientIntent />
 
             {/* 04. Smile Stories & Foundation Comparison */}
@@ -59,8 +64,8 @@ export default function HomePage() {
             {/* 07. Patient Journey (01 Book, 02 Meet, 03 Plan) */}
             <PatientJourney />
 
-            {/* 08. Verified Reviews & Clinic Commitments */}
-            <VerifiedReviews />
+            {/* 08. Verified Google Patient Reviews */}
+            <GoogleReviewsSection />
 
             {/* 09. Google Maps & Studio Location */}
             <GoogleMapsSection />

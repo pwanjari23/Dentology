@@ -10,16 +10,20 @@ const config: Config = {
     extend: {
       colors: {
         dentology: {
-          blue: "#2964B3",        // Primary Blue
-          navy: "#273146",        // Deep Navy
-          green: "#98BB66",       // Fresh Green
+          blue: "#0E3B27",        // Primary Emerald Green (Updated from Logo)
+          emerald: "#0B462D",     // Deep Emerald Green (Logo Background)
+          "emerald-dark": "#072B1C",// Darkest Emerald Surface
+          gold: "#D4AF37",        // Champagne Gold (Logo Emblem)
+          "gold-light": "#E5C278",// Bright Warm Gold
+          navy: "#1A252C",        // Deep Navy Slate
+          green: "#155D3D",       // Fresh Forest Green
           gray: "#C7CECE",        // Cool Gray
-          aqua: "#69A0AC",        // Aqua Blue
-          teal: "#6AB2A9",        // Soft Teal
-          terracotta: "#A95C3C",  // Terracotta
-          light: "#F8FAFC",       // Clean light neutral background
+          aqua: "#4A8F79",        // Soft Emerald Aqua
+          teal: "#3F8A7C",        // Deep Teal
+          terracotta: "#A95C3C",  // Warm Terracotta Accent
+          light: "#F0F7F3",       // Clean light neutral emerald canvas
           surface: "#FFFFFF",
-          muted: "#64748B",
+          muted: "#5B7065",
         },
       },
       fontFamily: {

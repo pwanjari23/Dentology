@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Calendar, Clock, User, Phone, MessageSquare, ArrowRight, ShieldCheck } from "lucide-react";
 import { useAppointment } from "@/context/AppointmentContext";
@@ -63,7 +64,7 @@ export default function AppointmentModal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeAppointmentModal}
-            className="fixed inset-0 bg-dentology-navy/60 backdrop-blur-sm"
+            className="fixed inset-0 bg-emerald-950/70 backdrop-blur-sm"
           />
 
           {/* Drawer / Bottom-Sheet Container */}
@@ -76,14 +77,24 @@ export default function AppointmentModal() {
           >
             <div>
               {/* Header */}
-              <div className="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
-                <div>
-                  <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-dentology-teal">
-                    Dentology • Jaripatka
-                  </span>
-                  <h3 className="font-serif text-2xl font-normal text-dentology-navy">
-                    Request Appointment
-                  </h3>
+              <div className="flex items-center justify-between pb-4 border-b border-emerald-900/10 mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="relative w-10 h-10 rounded-full overflow-hidden border border-dentology-gold/40 shadow-sm shrink-0">
+                    <Image
+                      src="/images/logo/dentology-logo.png"
+                      alt="Dentology Logo"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-dentology-gold">
+                      Dentology • Jaripatka
+                    </span>
+                    <h3 className="font-serif text-2xl font-normal text-dentology-emerald">
+                      Request Appointment
+                    </h3>
+                  </div>
                 </div>
                 <button
                   onClick={closeAppointmentModal}

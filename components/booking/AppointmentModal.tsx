@@ -206,7 +206,7 @@ export default function AppointmentModal() {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-xl bg-dentology-blue text-white font-sans font-bold text-center shadow-lg hover:bg-blue-600 transition-all flex items-center justify-center gap-2 mt-4 active:scale-[0.98]"
+                  className="w-full py-4 rounded-xl bg-dentology-emerald text-white font-sans font-bold text-center shadow-lg hover:bg-dentology-emerald-dark transition-all flex items-center justify-center gap-2 mt-4 active:scale-[0.98]"
                 >
                   <span>Continue on WhatsApp</span>
                   <ArrowRight className="w-4 h-4" />

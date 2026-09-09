@@ -6,33 +6,39 @@ export interface FAQItem {
 
 export const faqData: FAQItem[] = [
   {
-    question: "How can I book an appointment at Dentology?",
+    question: "Is dental treatment painful?",
     answer:
-      "You can book directly by sending a WhatsApp message to +91 95612 88530 or by using our interactive appointment drawer on this website. You can also DM us on our official Instagram account @dentology_og1.",
-    category: "booking",
-  },
-  {
-    question: "Where is Dentology located in Nagpur?",
-    answer:
-      "We are conveniently situated in Jaripatka, Nagpur at: 1st Floor, H.No 130, Pandav Enclave, Opposite Kewalramani Hospital, Kamal Phool Chowk. Landmark: Just a few turns straight from Hanuman Mandir to your right.",
-    category: "clinic",
-  },
-  {
-    question: "What is intraoral 3D scanning and how does it help me?",
-    answer:
-      "Intraoral scanning uses a comfortable handheld digital wand to take thousands of high-definition optical snapshots inside your mouth, instantly stitching them into a 3D digital model. Unlike messy impression paste, it is fast, comfortable, and allows you to clearly see your teeth and gums on a high-definition monitor while Dr. Sanika Sharma explains your oral health.",
-    category: "technology",
-  },
-  {
-    question: "Why is saving natural teeth so emphasized at Dentology?",
-    answer:
-      "Your natural tooth structure is anatomically unique and superior to any synthetic replacement. Dr. Sanika Sharma focuses on conservative dentistry—early detection, preventing small issues from escalating into major infections, and preserving your authentic tooth structure wherever possible.",
+      "At Dentology, we prioritize comfortable, gentle care. Dr. Sanika Sharma uses modern conservative techniques, effective local anesthesia, and clear patient communication so you are completely relaxed throughout your visit.",
     category: "care",
   },
   {
-    question: "How can I contact the clinic for urgent dental queries?",
+    question: "How do I book an appointment?",
     answer:
-      "You can reach Dr. Sanika Sharma and the Dentology team directly via WhatsApp or phone call at +91 95612 88530. We promptly review your message to coordinate consultation times.",
+      "You can easily book online using our 'Book Appointment' button, or connect directly via WhatsApp at +91 95612 88530. Our team will help you choose a convenient timing at our Jaripatka clinic.",
+    category: "booking",
+  },
+  {
+    question: "What happens during the first consultation?",
+    answer:
+      "Your first visit begins with a thorough, unhurried conversation with Dr. Sanika Sharma. We perform a gentle oral evaluation, discuss any symptoms or goals, and explain your options clearly so you are fully in control of your care plan.",
     category: "clinic",
+  },
+  {
+    question: "Do you offer 3D intraoral scanning?",
+    answer:
+      "Yes! We use high-definition 3D intraoral scanning. In just a few minutes, a precision digital 3D model of your mouth is generated without any messy impression putty, allowing you to view and discuss your teeth on screen.",
+    category: "technology",
+  },
+  {
+    question: "How much does treatment cost?",
+    answer:
+      "Treatment costs depend on the specific dental care required after your clinical evaluation. We maintain complete transparency with clear explanations and treatment breakdowns before any care begins.",
+    category: "care",
+  },
+  {
+    question: "Can I contact the clinic through WhatsApp?",
+    answer:
+      "Yes, WhatsApp is a fast way to reach us! Simply tap the 'Discuss on WhatsApp' button anywhere on our website or message +91 95612 88530 for consultation inquiries.",
+    category: "booking",
   },
 ];

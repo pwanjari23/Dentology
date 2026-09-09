@@ -11,7 +11,7 @@ export default function InstagramCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section id="instagram" className="relative py-14 sm:py-24 lg:py-32 bg-slate-50/70 overflow-hidden">
+    <section id="instagram" className="relative py-20 sm:py-28 lg:py-32 bg-slate-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-4 sm:gap-6">
           <SectionHeader
@@ -27,7 +27,7 @@ export default function InstagramCarousel() {
               href={socialData.instagram.profileUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full bg-dentology-blue text-white text-xs font-bold uppercase tracking-wider hover:bg-blue-600 transition-all shadow-md active:scale-95"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 sm:py-3.5 rounded-full bg-dentology-emerald text-white text-xs font-bold uppercase tracking-wider hover:bg-dentology-emerald-dark transition-all shadow-md active:scale-95"
             >
               <Instagram className="w-4 h-4" />
               <span>Follow {socialData.instagram.handle}</span>
@@ -47,7 +47,7 @@ export default function InstagramCarousel() {
               href={socialData.instagram.profileUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 w-[260px] sm:w-[340px] group flex flex-col rounded-2xl sm:rounded-[28px] overflow-hidden bg-white border border-slate-200/80 shadow-card hover:shadow-glass-hover hover:-translate-y-1.5 transition-all duration-300"
+              className="shrink-0 w-[260px] sm:w-[340px] group flex flex-col rounded-2xl sm:rounded-3xl overflow-hidden bg-white border border-slate-200/80 shadow-card hover:shadow-glass-hover hover:-translate-y-1.5 transition-all duration-300"
             >
               {/* Media Container */}
               <div className="relative aspect-square overflow-hidden bg-slate-900" data-cursor="OPEN">

@@ -3,7 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigation } from "@/context/NavigationContext";
 
-// Home Page Exclusive Sections (per user instruction)
+// Home Page Exclusive Sections
 import Hero from "@/components/hero/Hero";
 import TrustRibbon from "@/components/sections/TrustRibbon";
 import DoctorShortSpotlight from "@/components/sections/DoctorShortSpotlight";
@@ -12,7 +12,6 @@ import SmileStories from "@/components/sections/SmileStories";
 import InstagramCarousel from "@/components/sections/InstagramCarousel";
 import VideoExperience from "@/components/sections/VideoExperience";
 import PatientJourney from "@/components/sections/PatientJourney";
-import VerifiedReviews from "@/components/sections/VerifiedReviews";
 import GoogleReviewsSection from "@/components/sections/GoogleReviewsSection";
 import GoogleMapsSection from "@/components/sections/GoogleMapsSection";
 import FAQAccordion from "@/components/sections/FAQAccordion";
@@ -23,6 +22,7 @@ import DoctorSection from "@/components/sections/DoctorSection";
 import ClinicStory from "@/components/sections/ClinicStory";
 import ScanningExperience from "@/components/sections/ScanningExperience";
 import TreatmentExplorer from "@/components/sections/TreatmentExplorer";
+import TreatmentsCatalogPage from "@/components/sections/TreatmentsCatalogPage";
 
 export default function HomePage() {
   const { activeTab } = useNavigation();
@@ -40,40 +40,40 @@ export default function HomePage() {
             transition={{ duration: 0.4 }}
             className="flex flex-col w-full"
           >
-            {/* 01. Signature Interactive Hero with 3D Tooth & Climbing Specialists */}
+            {/* 01. Signature Interactive Hero */}
             <Hero />
 
             {/* 02. Trust Ribbon */}
             <TrustRibbon />
 
-            {/* 03. Flagship Short Doctor Spotlight */}
+            {/* 03. Flagship Doctor Spotlight */}
             <DoctorShortSpotlight />
 
-            {/* 04. Patient Intent Hub ("What brings you here today?") */}
+            {/* 04. Patient Intent Hub */}
             <PatientIntent />
 
-            {/* 04. Smile Stories & Foundation Comparison */}
+            {/* 05. Smile Stories & Comparison */}
             <SmileStories />
 
-            {/* 05. Life at Dentology (Instagram Carousel) */}
+            {/* 06. Life at Dentology (Instagram) */}
             <InstagramCarousel />
 
-            {/* 06. Cinematic Video Experience */}
+            {/* 07. Cinematic Video Experience */}
             <VideoExperience />
 
-            {/* 07. Patient Journey (01 Book, 02 Meet, 03 Plan) */}
+            {/* 08. Patient Journey */}
             <PatientJourney />
 
-            {/* 08. Verified Google Patient Reviews */}
+            {/* 09. Verified Google Reviews */}
             <GoogleReviewsSection />
 
-            {/* 09. Google Maps & Studio Location */}
+            {/* 10. Google Maps & Location */}
             <GoogleMapsSection />
 
-            {/* 10. Frequently Asked Questions */}
+            {/* 11. FAQ */}
             <FAQAccordion />
 
-            {/* 11. Final CTA with Drawing Smile Line */}
+            {/* 12. Final CTA */}
             <FinalCTA />
           </motion.div>
         )}
@@ -128,9 +128,9 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.35 }}
-            className="pt-24 pb-16 min-h-screen bg-white"
+            className="pt-24 pb-16 min-h-screen bg-[#FAFBF9]"
           >
-            <TreatmentExplorer />
+            <TreatmentsCatalogPage />
           </motion.div>
         )}
       </AnimatePresence>

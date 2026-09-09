@@ -31,26 +31,26 @@ body {
 }
 
 ::selection {
-  background-color: #2964b3;
+  background-color: #0B462D;
   color: #ffffff;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f0f7f3;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #c7cece;
-  border-radius: 4px;
+  border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2964b3;
+  background: #0E3B27;
 }
 
 /* Custom cursor pointer utility */

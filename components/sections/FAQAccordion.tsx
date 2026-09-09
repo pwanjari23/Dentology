@@ -15,7 +15,7 @@ export default function FAQAccordion() {
   };
 
   return (
-    <section className="relative py-14 sm:py-24 lg:py-32 bg-slate-50/70 overflow-hidden">
+    <section className="relative py-20 sm:py-28 lg:py-32 bg-slate-50 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Help & Information"

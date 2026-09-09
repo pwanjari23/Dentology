@@ -93,7 +93,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           <div className="border-t border-slate-700/60 pt-6 flex flex-col gap-4">
             <button
               onClick={handleBookClick}
-              className="w-full py-4 rounded-xl bg-dentology-blue text-white font-sans font-bold text-center shadow-lg hover:bg-blue-600 transition-all text-base"
+              className="w-full py-4 rounded-xl bg-dentology-emerald text-white font-sans font-bold text-center shadow-lg hover:bg-dentology-emerald-dark transition-all text-base"
             >
               Book an Appointment
             </button>

@@ -47,7 +47,7 @@ export default function FloatingWhatsApp() {
         {/* Book Appointment Button */}
         <button
           onClick={() => openAppointmentModal("Mobile Sticky Bottom Bar")}
-          className="flex-1 py-3 px-4 rounded-full bg-dentology-blue text-white font-sans font-bold text-xs flex items-center justify-center gap-2 shadow-md hover:bg-blue-600 active:scale-95 transition-all"
+          className="flex-1 py-3 px-4 rounded-full bg-dentology-emerald text-white font-sans font-bold text-xs flex items-center justify-center gap-2 shadow-md hover:bg-dentology-emerald-dark active:scale-95 transition-all"
         >
           <Calendar className="w-4 h-4" />
           <span>Book Visit</span>

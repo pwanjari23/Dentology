@@ -42,7 +42,7 @@ export default function PatientJourney() {
   const { openAppointmentModal } = useAppointment();
 
   return (
-    <section className="relative py-14 sm:py-24 lg:py-32 bg-white overflow-hidden">
+    <section className="relative py-20 sm:py-28 lg:py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="The Patient Journey"
@@ -83,7 +83,7 @@ export default function PatientJourney() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
                   transition={{ duration: 0.6, delay: idx * 0.2 }}
-                  className="w-[82vw] max-w-[320px] shrink-0 md:w-auto md:max-w-none snap-center flex flex-col items-center text-center p-6 sm:p-8 rounded-2xl sm:rounded-[32px] bg-slate-50 border border-slate-200/80 shadow-card hover:shadow-glass-hover hover:-translate-y-1.5 transition-all duration-300 group"
+                  className="w-[82vw] max-w-[320px] shrink-0 md:w-auto md:max-w-none snap-center flex flex-col items-center text-center p-6 sm:p-8 rounded-2xl sm:rounded-3xl bg-slate-50 border border-slate-200/80 shadow-card hover:shadow-glass-hover hover:-translate-y-1.5 transition-all duration-300 group"
                 >
                   {/* Step Number & Category Badge (Clean Vertical Separation) */}
                   <div className="flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white shadow-md border border-slate-200/90 mb-5 sm:mb-6 group-hover:scale-105 transition-transform">
@@ -122,7 +122,7 @@ export default function PatientJourney() {
           <div className="mt-8 sm:mt-12 text-center">
             <button
               onClick={() => openAppointmentModal("Patient Journey Step 01")}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-dentology-blue text-white font-sans text-xs font-bold uppercase tracking-wider hover:bg-blue-600 transition-all shadow-md active:scale-95"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-dentology-emerald text-white font-sans text-xs font-bold uppercase tracking-wider hover:bg-dentology-emerald-dark transition-all shadow-md active:scale-95"
             >
               <span>Begin Your Step 01</span>
               <ArrowRight className="w-4 h-4" />

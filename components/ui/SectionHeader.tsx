@@ -9,7 +9,7 @@ interface SectionHeaderProps {
   subtitle?: string;
   centered?: boolean;
   dark?: boolean;
-  badgeColor?: "blue" | "green" | "aqua" | "teal" | "terracotta";
+  badgeColor?: "blue" | "green" | "aqua" | "teal" | "terracotta" | "emerald";
 }
 
 export default function SectionHeader({
@@ -26,6 +26,7 @@ export default function SectionHeader({
     aqua: "bg-dentology-aqua/15 text-dentology-navy border-dentology-aqua/30",
     teal: "bg-dentology-teal/15 text-dentology-navy border-dentology-teal/30",
     terracotta: "bg-dentology-terracotta/15 text-dentology-terracotta border-dentology-terracotta/30",
+    emerald: "bg-dentology-emerald/10 text-dentology-emerald border-dentology-emerald/20",
   };
 
   return (
@@ -34,7 +35,7 @@ export default function SectionHeader({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
-      className={`max-w-3xl mb-8 sm:mb-12 md:mb-16 ${centered ? "mx-auto text-center" : ""}`}
+      className={`max-w-3xl mb-10 sm:mb-14 lg:mb-16 ${centered ? "mx-auto text-center" : ""}`}
     >
       {/* Eyebrow */}
       <div className={`inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1 sm:px-3.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold tracking-widest uppercase mb-3 sm:mb-4 border ${badgeStyles[badgeColor]}`}>
